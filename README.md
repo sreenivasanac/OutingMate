@@ -1,0 +1,2 @@
+# OutingMate
+Whatsapp Outing Planner
