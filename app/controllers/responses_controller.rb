@@ -3,7 +3,7 @@ class ResponsesController < ApplicationController
 		outing = Ouitng.find params[:outing_id]
 		@response = outing.responses.new params[:response]
 		if response.save
-	    flash[:notice] = "#{@response.title} saved."
+	    flash[:notice] = "response saved."
 	    redirect_to outing_path(outing)
 	  else
 	    render :new # todo
