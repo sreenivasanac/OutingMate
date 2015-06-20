@@ -1,0 +1,25 @@
+%form.form-horizontal.container
+  .form-group
+    %label.control-label.col-xs-4{:for => "adminName"} Admin Name
+    .col-xs-6
+      %input#adminName.form-control{:placeholder => "Admin Name"}
+  .form-group
+    %label.control-label.col-xs-4{:for => "outingTitle"} Outing Title
+    .col-xs-6
+      %input#outingTitle.form-control{:placeholder => "Weekend Movie"}
+  .form-group
+    .col-xs-offset-2.col-xs-6
+      .checkbox
+        %label
+          %input{:type => "checkbox"} This Weekend
+  .form-group
+    %label.control-label.col-xs-4{:for => "fromDate"} From Date
+    .col-xs-6
+      %input#fromDate.form-control{:type => "date"}  
+  .form-group
+    %label.control-label.col-xs-4{:for => "toDate"} To Date
+    .col-xs-6
+      %input#toDate.form-control{:type => "date"}
+  .form-group
+    .col-xs-offset-2.col-xs-6
+      %button.btn.btn-primary{:type => "submit"} Create Outing Plan

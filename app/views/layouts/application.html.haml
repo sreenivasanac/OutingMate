@@ -1,0 +1,9 @@
+= render 'layouts/head'
+%body.panel-out.fixed
+  %div.container
+    = render 'layouts/titlebar'
+    = render 'layouts/create'
+    = render 'layouts/vote'
+
+  = javascript_include_tag "application"
+  %script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js")
